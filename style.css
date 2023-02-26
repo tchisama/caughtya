@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Sans+Arabic:wght@100;200;400;600;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap");
+:root {
+  --blue: #457b9d;
+  --blue-50: #457b9d8c;
+  --light: #f1faee;
+  --dark-blue: #1d3557;
+  --light-blue: #a8dadc;
+  --red: #e63946;
+}
+
+
+body {
+  font-family: "Lalezar", cursive;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light);
+  scroll-behavior: smooth;
+}
+
+.text-big {
+  font-size: clamp(2.5rem, 6vw + 1rem, 8rem);
+}
+.text-mid {
+  font-size: clamp(1.5rem, 3vw , 4rem);
+}
+.text-smo {
+  font-size: clamp(.9rem, .7vw + .5rem, 1.8rem);
+}
