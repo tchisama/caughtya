@@ -10,17 +10,12 @@
       src="https://kit.fontawesome.com/289c1826d1.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://kit.fontawesome.com/289c1826d1.css"
-      crossorigin="anonymous"
-    />
     <title>CaughtYa</title>
   </head>
   <body dir="rtl">
     <section class="h-[100vh] px-4 md:px-0 flex flex-col container mx-auto">
       <nav class="p-5 flex">
-        <img src="./src/images/logo.png" class="w-40" alt="" />
+        <img src="./src/images/logo.png" class="w-24 md:w-40" alt="" />
       </nav>
       <div class="flex-1 flex justify-center flex-col w-full">
         <h1 class="text-big text-[var(--dark-blue)] font-semibold drop-shadow-2xl shadow-[var(--blue-50)] ">
@@ -32,13 +27,13 @@
         <p class="opacity-75 text-smo py-5 text-[var(--dark-blue)] font-semibold">
           أذخل رقم هاتف النصاب أو أي معلومة ستساهم في الوصول لنصاب
         </p>
-        <div
+        <form
           class="flex flex-col md:flex-row gap-3 w-full md:w-[600px]"
         >
           <input
             placeholder="أذخل المعلومات هنا"
             type="text"
-            class=" py-2 outline-none flex-1 pr-4 border-2 rounded-xl border-[var(--light-blue)]"
+            class=" py-2 outline-none flex-1 pr-4 border-2 rounded-xl border-[var(--blue)] text-[var(--dark-blue)]"
           />
           <button
             class="hover:scale-[1.03] duration-200 ease-in-out shadow-lg hover:shadow-xl hover:shadow-[var(--blue-50)] shadow-[var(--blue-50)] text-white bg-[var(--blue)] px-4 rounded-xl py-2 w-full sm:w-fit"
@@ -46,7 +41,7 @@
             ارسال
             <i class="fa-solid fa-paper-plane"></i>
           </button>
-        </div>
+        </form>
       </div>
       <div class="p-3 flex justify-center ">
         <div class="w-8 h-12 border-2 border-[var(--blue)] rounded-full"></div>
