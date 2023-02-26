@@ -13,49 +13,77 @@
     <title>CaughtYa</title>
   </head>
   <body dir="rtl">
-    <section class="h-[100vh] px-4 md:px-0 flex flex-col container mx-auto">
-      <nav class="p-5 flex">
-        <img src="./src/images/logo.png" class="w-24 md:w-40" alt="" />
-      </nav>
-      <div class="flex-1 flex justify-center flex-col w-full">
-        <h1 class="text-big text-[var(--dark-blue)] font-semibold drop-shadow-2xl shadow-[var(--blue-50)] ">
-          هل تم النصب عليك؟
-        </h1>
-        <h3 class="text-mid text-[var(--dark-blue)] font-semibold">
-          أذخل معلومات النصاب وساعد في القبض عليه !
-        </h3>
-        <p class="opacity-75 text-smo py-5 text-[var(--dark-blue)] font-semibold">
-          أذخل رقم هاتف النصاب أو أي معلومة ستساهم في الوصول لنصاب
-        </p>
-        <form
-          class="flex flex-col md:flex-row gap-3 w-full md:w-[600px]"
-        >
-          <input
-            placeholder="أذخل المعلومات هنا"
-            type="text"
-            class=" py-2 outline-none flex-1 pr-4 border-2 rounded-xl border-[var(--blue)] text-[var(--dark-blue)]"
-          />
-          <button
-            class="hover:scale-[1.03] duration-200 ease-in-out shadow-lg hover:shadow-xl hover:shadow-[var(--blue-50)] shadow-[var(--blue-50)] text-white bg-[var(--blue)] px-4 rounded-xl py-2 w-full sm:w-fit"
+    <div
+      class="snap-y duration-200 w-screen h-screen snap-mandatory overflow-y-scroll scroll-smooth"
+    >
+      <section
+        class="snap-start h-[100vh] px-4 md:px-0 flex flex-col container mx-auto"
+      >
+        <nav class="p-5 flex">
+          <img src="./src/images/logo.png" class="w-24 md:w-40" alt="" />
+        </nav>
+        <div class="flex-1 flex justify-center flex-col w-full">
+          <h1
+            class="text-big text-[var(--dark-blue)] font-semibold drop-shadow-2xl shadow-[var(--blue-50)]"
           >
-            ارسال
-            <i class="fa-solid fa-paper-plane"></i>
-          </button>
-        </form>
-      </div>
-      <div class="p-3 flex justify-center ">
-        <div class="w-8 h-12 border-2 border-[var(--blue)] rounded-full"></div>
-      </div>
-    </section>
-    <section class="bg-[var(--dark-blue)]">
-        <div class="h-[100vh] px-4 md:px-0 flex flex-col container mx-auto">
-
+            هل تم النصب عليك؟
+          </h1>
+          <h3 class="text-mid text-[var(--dark-blue)] font-semibold">
+            أذخل معلومات النصاب وساعد في القبض عليه !
+          </h3>
+          <p
+            class="opacity-75 text-smo py-5 text-[var(--dark-blue)] font-semibold"
+          >
+            أذخل رقم هاتف النصاب أو أي معلومة ستساهم في الوصول لنصاب
+          </p>
+          <form class="flex flex-col md:flex-row gap-3 w-full md:w-[600px]">
+            <input
+              placeholder="أذخل المعلومات هنا"
+              type="text"
+              class="py-2 outline-none flex-1 pr-4 border-2 rounded-xl border-[var(--blue)] text-[var(--dark-blue)]"
+            />
+            <button
+              class="hover:scale-[1.03] duration-200 ease-in-out shadow-lg hover:shadow-xl hover:shadow-[var(--blue-50)] shadow-[var(--blue-50)] text-white bg-[var(--blue)] px-4 rounded-xl py-2 w-full sm:w-fit"
+            >
+              ارسال
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
-    </section>
-    <section class="bg-[var(--light)]">
-        <div class="h-[100vh] px-4 md:px-0 flex flex-col container mx-auto">
-
+        <div class="p-3 flex justify-center">
+          <div
+            class="w-8 h-12 border-2 border-[var(--blue)] rounded-full"
+          ></div>
         </div>
-    </section>
+      </section>
+      <section class="snap-start bg-[var(--dark-blue)]">
+        <div
+          class="bg-black bg-opacity-5 rounded-3x w-full mx-auto h-[15vh] md:h-[20vh] flex justify-center gap-12 md:gap-64"
+        >
+          <div class="flex flex-col gap-1 justify-center items-center">
+            <h2 class="text-1xl md:text-6xl text-[var(--light)]">80</h2>
+            <h2 class="md:text-2xl text-[var(--light)]">تبليغات</h2>
+          </div>
+          <div class="flex flex-col gap-1 justify-center items-center">
+            <h2 class="text-1xl md:text-6xl text-[var(--light)]">18</h2>
+            <h2 class="md:text-2xl text-[var(--light)]">النصابين</h2>
+          </div>
+          <div class="flex flex-col gap-1 justify-center items-center">
+            <h2 class="text-1xl md:text-6xl text-[var(--light)]">5</h2>
+            <h2 class="md:text-2xl text-[var(--light)]">القاء القبض</h2>
+          </div>
+        </div>
+        <div
+          class="h-screen pt-2 md:pt-5 flex-1 px-4 md:px-0 flex flex-col container mx-auto"
+        >
+        <h1 class="text-4xl text-[var(--light)] "> آخر التبليغات <i class="fa-solid fa-triangle-exclamation"></i></h1>
+        </div>
+      </section>
+      <section class="snap-start bg-[var(--light)]">
+        <div
+          class="h-screen px-4 md:px-0 flex flex-col container mx-auto"
+        ></div>
+      </section>
+    </div>
   </body>
 </html>
